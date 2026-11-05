@@ -1,0 +1,18 @@
+{
+  "model_name": "Multinomial Naive Bayes (TF-IDF)",
+  "accuracy": 0.7885,
+  "trained_samples_count": 258,
+  "categories": [
+    "Bills & Utilities",
+    "Education",
+    "Entertainment",
+    "Food & Dining",
+    "Healthcare & Medical",
+    "Investment",
+    "Other & Miscellaneous",
+    "Salary & Earnings",
+    "Shopping & Retail",
+    "Transportation"
+  ],
+  "last_trained": "2026-11-05 16:31:40 UTC"
+}
