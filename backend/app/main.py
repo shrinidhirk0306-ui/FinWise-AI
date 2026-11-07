@@ -41,6 +41,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.middleware("http")
+async def ensure_api_prefix(request, call_next):
+    # Ensure routes match whether Vercel serverless passes /api/... or stripped /...
+    path = request.scope.get("path", "")
+    if not path.startswith("/api") and path not in ("/", "/docs", "/openapi.json", "/redoc"):
+        request.scope["path"] = f"/api{path}"
+    response = await call_next(request)
+    return response
+
 # Include all route modules
 app.include_router(transactions.router)
 app.include_router(ai.router)

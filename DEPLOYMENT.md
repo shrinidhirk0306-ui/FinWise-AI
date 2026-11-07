@@ -115,3 +115,4 @@ Since the frontend needs the backend URL, deploy the backend first:
   The FastAPI backend has CORS enabled for all origins (`*`), so it will accept requests from any Vercel domain without errors.
 * **Updating Code:**
   Whenever you `git push origin main`, both Vercel and Render will automatically rebuild and deploy your changes.
+
