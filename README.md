@@ -235,7 +235,17 @@ When presenting FinWise AI for evaluation:
 
 ---
 
-## 7. Future Extensibility Roadmap
+## 7. Cloud Deployment (Vercel & Render)
+
+FinWise AI is pre-configured for one-click cloud deployment:
+* **Frontend:** Ready for **Vercel** with automatic Vite detection and client-side SPA routing (`vercel.json`).
+* **Backend:** Ready for **Render** (or Railway/Fly.io) using `render.yaml` or `backend/Procfile`.
+
+For a complete step-by-step walkthrough, see **[DEPLOYMENT.md](DEPLOYMENT.md)**.
+
+---
+
+## 8. Future Extensibility Roadmap
 
 While the application is complete and fully functional, the modular architecture allows seamless future expansions:
 1. **Multi-User Authentication**: Integrate JWT authentication with role-based access control.

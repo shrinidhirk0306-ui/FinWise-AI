@@ -1,0 +1,9 @@
+{
+  "name": "finwise-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FinWise AI – AI-Powered Personal Finance Management System",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build"
+  }
+}
